@@ -1,0 +1,20 @@
+{
+  "domain": "webtunnel_uid",
+  "name": "WebTunnel UID",
+  "codeowners": [
+    "@Desmond-Dong"
+  ],
+  "config_flow": true,
+  "documentation": "https://w.pgrm.top",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Desmond-Dong/webtunnel/issues",
+  "loggers": [
+    "webtunnel_uid.wtclient"
+  ],
+  "requirements": [
+    "cramjam>=2.8,<3",
+    "aioquic>=1.2,<2"
+  ],
+  "version": "2026.10.10"
+}

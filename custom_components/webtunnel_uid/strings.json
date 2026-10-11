@@ -1,0 +1,128 @@
+{
+  "title": "WebTunnel UID",
+  "config": {
+    "step": {
+      "user": {
+        "title": "WebTunnel UID 登录",
+        "description": "填入 WebTunnel 平台分配的 uid",
+        "data": {
+          "uid": "UID"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "uid 不正确",
+      "cannot_connect": "无法连接云端，请检查网络",
+      "missing_uid": "请填写 uid"
+    },
+    "abort": {
+      "already_configured": "该账号已配置"
+    }
+  },
+  "config_subentries": {
+    "channel": {
+      "entry_type": "通道"
+    }
+  },
+  "device": {
+    "account_basic": {
+      "name": "基础信息"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "状态",
+        "state": {
+          "online": "在线",
+          "partial": "部分异常",
+          "offline": "离线"
+        }
+      },
+      "channel_count": {
+        "name": "通道数量"
+      },
+      "channel_status": {
+        "name": "{name} · 通道状态",
+        "state": {
+          "ok": "正常",
+          "starting": "启动中",
+          "error": "错误",
+          "disabled": "已停用",
+          "paused": "已暂停",
+          "unsupported": "不支持",
+          "remote": "运行于其他主机"
+        }
+      },
+      "public_url": {
+        "name": "{name} · 公网地址"
+      },
+      "last_heartbeat": {
+        "name": "最近心跳"
+      },
+      "local_target": {
+        "name": "{name} · 本地目标"
+      },
+      "transport": {
+        "name": "{name} · 传输方式"
+      },
+      "active_channels": {
+        "name": "在线通道"
+      },
+      "heartbeat_latency": {
+        "name": "心跳延迟"
+      },
+      "tunnel_servers": {
+        "name": "隧道服务端"
+      },
+      "version": {
+        "name": "客户端版本"
+      },
+      "remote_port": {
+        "name": "{name} · 远程端口"
+      },
+      "channel_type": {
+        "name": "{name} · 通道类型"
+      },
+      "user": {
+        "name": "用户"
+      },
+      "traffic_down": {
+        "name": "{name} · 下行流量"
+      },
+      "traffic_up": {
+        "name": "{name} · 上行流量"
+      },
+      "monthly_traffic_down": {
+        "name": "本月下行流量"
+      },
+      "monthly_traffic_up": {
+        "name": "本月上行流量"
+      }
+    },
+    "switch": {
+      "channel_switch": {
+        "name": "{name} · 通道启停"
+      },
+      "cloud_switch": {
+        "name": "{name} · 云端启停"
+      }
+    },
+    "binary_sensor": {
+      "ws_connected": {
+        "name": "云端控制连接"
+      },
+      "cloud_enabled": {
+        "name": "{name} · 云端启用"
+      },
+      "server_online": {
+        "name": "{name} · 服务端在线"
+      }
+    },
+    "button": {
+      "reconnect": {
+        "name": "重连隧道"
+      }
+    }
+  }
+}

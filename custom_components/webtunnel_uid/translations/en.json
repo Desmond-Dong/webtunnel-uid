@@ -1,0 +1,128 @@
+{
+  "title": "WebTunnel UID",
+  "config": {
+    "step": {
+      "user": {
+        "title": "WebTunnel UID sign-in",
+        "description": "Enter the uid assigned by the WebTunnel platform",
+        "data": {
+          "uid": "UID"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid uid",
+      "cannot_connect": "无法连接云端，请检查网络",
+      "missing_uid": "uid is required"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "config_subentries": {
+    "channel": {
+      "entry_type": "Channel"
+    }
+  },
+  "device": {
+    "account_basic": {
+      "name": "Basic info"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "online": "Online",
+          "partial": "Degraded",
+          "offline": "Offline"
+        }
+      },
+      "channel_count": {
+        "name": "Channel count"
+      },
+      "channel_status": {
+        "name": "{name} · Channel status",
+        "state": {
+          "ok": "OK",
+          "starting": "Starting",
+          "error": "Error",
+          "disabled": "Disabled",
+          "paused": "Paused",
+          "unsupported": "Unsupported",
+          "remote": "Running on another host"
+        }
+      },
+      "public_url": {
+        "name": "{name} · Public URL"
+      },
+      "last_heartbeat": {
+        "name": "Last heartbeat"
+      },
+      "local_target": {
+        "name": "{name} · Local target"
+      },
+      "transport": {
+        "name": "{name} · Transport"
+      },
+      "active_channels": {
+        "name": "Active channels"
+      },
+      "heartbeat_latency": {
+        "name": "Heartbeat latency"
+      },
+      "tunnel_servers": {
+        "name": "Tunnel servers"
+      },
+      "version": {
+        "name": "Client version"
+      },
+      "remote_port": {
+        "name": "{name} · Remote port"
+      },
+      "channel_type": {
+        "name": "{name} · Channel type"
+      },
+      "user": {
+        "name": "User"
+      },
+      "traffic_down": {
+        "name": "{name} · Download traffic"
+      },
+      "traffic_up": {
+        "name": "{name} · Upload traffic"
+      },
+      "monthly_traffic_down": {
+        "name": "Monthly traffic down"
+      },
+      "monthly_traffic_up": {
+        "name": "Monthly traffic up"
+      }
+    },
+    "switch": {
+      "channel_switch": {
+        "name": "{name} · Channel switch"
+      },
+      "cloud_switch": {
+        "name": "{name} · Cloud switch"
+      }
+    },
+    "binary_sensor": {
+      "ws_connected": {
+        "name": "Cloud control connection"
+      },
+      "cloud_enabled": {
+        "name": "{name} · Cloud enabled"
+      },
+      "server_online": {
+        "name": "{name} · Server online"
+      }
+    },
+    "button": {
+      "reconnect": {
+        "name": "Reconnect tunnels"
+      }
+    }
+  }
+}
